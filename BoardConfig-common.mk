@@ -145,16 +145,12 @@ BOARD_RAMDISK_USE_LZ4 := true
 # because some kernel configurations may have extra debug or test modules,
 # make sure any required to be loaded during first stage init are listed.
 BOOT_KERNEL_MODULES := \
-	msm_ipc_logging.ko \
 	qtee_shm_bridge.ko \
 	qcom_hwspinlock.ko \
 	smem.ko \
-	msm_minidump.ko \
-	watchdog_v2.ko \
 	early_random.ko \
 	qcom-pdc.ko \
 	cmd-db.ko \
-	qcom_rpmh.ko \
 	phy-qcom-ufs.ko \
 	phy-qcom-ufs-qrbtc-sdm845.ko \
 	phy-qcom-ufs-qmp-v4.ko \
@@ -183,7 +179,6 @@ BOOT_KERNEL_MODULES := \
 	msm_geni_serial.ko \
 	msm_dma_iommu_mapping.ko \
 	arm-smmu-debug.ko \
-	iommu-logger.ko \
 	arm-smmu.ko \
 	ufshcd-core.ko \
 	ufshcd-pltfrm.ko \
@@ -194,7 +189,6 @@ BOOT_KERNEL_MODULES := \
 	pinctrl-spmi-gpio.ko \
 	pinctrl-spmi-mpp.ko \
 	pwm-qti-lpg.ko \
-	debugcc-lito.ko \
 	dispcc-lito.ko \
 	gpucc-lito.ko \
 	npucc-lito.ko \
@@ -210,8 +204,6 @@ BOOT_KERNEL_MODULES := \
 	llcc-lito.ko \
 	core_hang_detect.ko \
 	gladiator_hang_detect.ko \
-	minidump_log.ko \
-	memory_dump_v2.ko \
 	dcc_v2.ko \
 	service-locator.ko \
 	service-notifier.ko \
@@ -233,12 +225,8 @@ BOOT_KERNEL_MODULES := \
 	glink_pkt.ko \
 	smp2p_sleepstate.ko \
 	event_timer.ko \
-	lpm-stats.ko \
 	msm_pm.ko \
-	rpmh_master_stat.ko \
 	system_pm.ko \
-	rpm_stats.ko \
-	ddr_stats.ko \
 	cdsprm.ko \
 	msm_icnss.ko \
 	modemsmem.ko \
@@ -250,7 +238,6 @@ BOOT_KERNEL_MODULES := \
 	adsprpc_compat.ko \
 	adsprpc.ko \
 	fastcvpd.ko \
-	rdbg.ko \
 	qpnp-power-on.ko \
 	msm-poweroff.ko \
 	usb_f_diag.ko \
@@ -298,7 +285,6 @@ BOOT_KERNEL_MODULES := \
 	usb_f_ptp.ko \
 	roles.ko \
 	tcpm.ko \
-	logbuffer.ko \
 	pmic-voter.ko \
 	qpnp_pdphy.ko \
 	dwc3-haps.ko \
@@ -324,7 +310,6 @@ BOOT_KERNEL_MODULES := \
 	bcl_pmic5.ko \
 	bcl_soc.ko \
 	qmi_cdev.ko \
-	lmh_dbg.ko \
 	msm_lmh_dcvs.ko \
 	regulator_aop_cdev.ko \
 	cpu_isolate.ko \
